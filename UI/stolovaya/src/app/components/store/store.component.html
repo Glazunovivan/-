@@ -1,0 +1,19 @@
+<h5 class="text-center">Доступные точки питания в столовой</h5>
+<!-- *ngFor="let store of stores" -->
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3" *ngFor="let store of stores">
+                <div class="card mb-3 shadow-sm" style="max-width: 300px; height: auto">
+                    <img class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">{{store.name}}</h5>
+                      <p class="card-text">{{store.description}}</p>
+                      <a href="#" class="btn btn-outline-primary">Просмотреть меню</a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
+    
